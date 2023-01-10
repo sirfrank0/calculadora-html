@@ -10,10 +10,10 @@ function calcular(){
 
     const operador = txtOperador.value
 
-    if(operador == "+" || operador == "-" || operador == "*" || operador == "/" ){
-        console.log('calculo posible')
+    if(operador == "+" || operador == "-" || operador == "*" || operador == "/" ){          // if para saber si un input es posible o no 
+        pResultado.innerText = 'calculo posible'
     }else{
-        console.log('calculo imposible')
+        pResultado.innerText = 'calculo imposible'
     }
 
 

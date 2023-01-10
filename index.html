@@ -8,6 +8,12 @@
             font-family: sans-serif;
             text-align: center;
         }
+
+        input{
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
@@ -15,5 +21,7 @@
     <input type="text" id="op1" placeholder="Operando 1">
     <input type="text" id="operador" placeholder="+, -, *, /">
     <input type="text" id="op2" placeholder="Operando 2">
+    <input type="submit" value="Calcular" id="Calcular" onclick=calcular()>     <!--Oneclick invoca la funcion calcular() de JS para el boton-->
+    <p id="resultado"></p>
 </body>
 </html>

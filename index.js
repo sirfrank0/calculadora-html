@@ -5,5 +5,5 @@ const btnCalcular = document.getElementById('Calcular');
 const pResultado = document.getElementById('resultado')
 
 function calcular(){
-    console.log('Apretaste el boton calcular: ')
+    console.log(txtOperador.value)              //Con .value se muestra el valor dado para txtOperador
 }

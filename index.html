@@ -17,11 +17,14 @@
     </style>
 </head>
 <body>
+
+    <form action="" method="dialog">            <!-- method="dialog" impide recargar la pagina al finalizar el calculo-->
     <h1>Calculadora-HTML</h1>
     <input type="text" id="op1" placeholder="Operando 1">
     <input type="text" id="operador" placeholder="+, -, *, /">
     <input type="text" id="op2" placeholder="Operando 2">
     <input type="submit" value="Calcular" id="Calcular" onclick=calcular()>     <!--Oneclick invoca la funcion calcular() de JS para el boton-->
     <p id="resultado"></p>
+    </form>
 </body>
 </html>

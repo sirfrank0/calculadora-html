@@ -12,9 +12,9 @@ function calcular(){
     const op1 = parseFloat(txtOp1.value) ;      //parseFloat para convertir string en numeros decimales
     const op2 = parseFloat(txtOp2.value) ;
 
-    if(operador == "+" || operador == "-" || operador == "*" || operador == "/" ){          // if para saber si un input es posible o no 
+    if((operador == "+" || operador == "-" || operador == "*" || operador == "/") && !isNaN(op1) && !isNaN(op2)){          // if para saber si un input es posible o no // !isNaN(0=) funciiona para obligar a que un dato sea un numero no un string
         let resultado;
-        switch (operador){                      // swicth para reemplzar esle if y crear varias situaciones
+        switch (operador){                      // switch para reemplzar esle if y crear varias situaciones
 
             case "+": resultado= op1 + op2
             break;
@@ -29,9 +29,11 @@ function calcular(){
             break;
 
         }
-        pResultado.innerText = 'calculo posible'                                            // Con innerText se aniade texto a una etiqueta de HTML
+        pResultado.style = "color:black"            //Se cambia el stilo de una etiqueta
+        pResultado.innerText = '= ' + resultado;                                            // Con innerText se aniade texto a una etiqueta de HTML
     }else{
-        pResultado.innerText = 'calculo imposible'
+        pResultado.style = "color:red"
+        pResultado.innerText = 'Calculo imposible'
     }
 
 
